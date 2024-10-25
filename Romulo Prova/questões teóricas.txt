@@ -1,9 +1,11 @@
+------------------------------------------------------------------------
 Questão 1- 
 
 Explique o que ocorre em um acesso a uma página na web, descreva todas etapas e protocolos envolvidos até a carga completa do site.
 
-R1- Primeiro o navegador envia uma requerimento ao servidor que por sua vez responde ao requerimento carregando o site ou negando.
+R1- Primeiro o navegador envia uma solicitação HTP ao servidor que por sua vez responde ao requerimento com um protocolo HTTP que carrega o site.
 
+------------------------------------------------------------------------
 
 Questão 2-
 
@@ -11,13 +13,14 @@ Questão 2-
 “ HTML é uma linguagem de programação de uso geral, assim como CSS, java e javascript.”
 
 R2- Não, pois HTML foi originalmente criado apenas para a criação de textos acadêmicos, textos esses que nâo exigiam uma gama de posicionamento, responsabilidade e outros elementos estéticos que foram exigidos após o sucesso do HTML.
-
+------------------------------------------------------------------------
 Questão 3-
 
 SObre CSS responda.
 a) Quais são as formas de incluir css em um documento HTML cite as três e explique que impacto isso tem no processamento das regras.
 
-Ra  
+Ra  A primeira forma é utilizando o atributo style, A segunda forma é utilizar a tag style dentro do head da página HTML e a terceira é uma arquivo dentro da pasta do projeto com o nome .css. 
+
 
 b) Como funcionam seletores CSS explique se necessário com exemplos.
 
@@ -28,6 +31,10 @@ Rb Os seletores são utilizados para "chamar" a tag do elemento para então pass
 
 c) Como funcionam o posicionamento de elementos no HTML e CSS, descreva e explique se necessário com exemplos.
 
+
+
+
 Rc: O posicionamento dos elementos pode ser feito apartir do display flex, grid e outro que eu esqueci
 o display flex por sua vez possui o align-items, justfy content que servem para posicionar os elementos e o grid divide a tela em uma grade que permite adicioner colunas e linhas que podem ser moldadas de forma flexivel apartir de justfy content ou align items também.
 
+------------------------------------------------------------------------
