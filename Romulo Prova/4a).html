@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    
+    #container{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+        width: 100%;
+        height: 100%;
+        max-width: 150%;
+        min-height: 100%;
+        transition: 1s, 4s, 5s;
+    }
+
+    #container:hover{
+        width: 150%;
+        height: 150%;
+
+    }
+
+    #japao{
+        width: 600px;
+        height: 400px;
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-color: black;
+
+
+    }
+
+    #sol{
+        
+        
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+
+    }
+    #paisesbaixo{
+        width: 600px;
+        height: 400px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #listra3{
+
+
+        width: 600px;
+        height: 120px;
+        background-color: blue;
+
+       
+        
+    }
+    #listra2{
+
+        width: 600px;
+        height: 140px;
+        background-color: rgb(255, 255, 255);
+
+    }
+    #listra1{
+
+        width: 600px;
+        height: 140px;
+        background-color: rgb(255, 0, 0);
+    
+    }
+
+
+    #italia{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 600px;
+        height: 400px;
+
+
+    }
+
+    #listrai1{
+
+        height: 400px;
+        width: 100px;
+        background-color: rgb(63, 167, 94);
+
+
+    }
+    #listrai2{
+
+        height: 400px;
+        width: 100px;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    listrai3{
+
+        height: 400px;
+        width: 100px;
+        background-color: rgb(248, 0, 0);
+
+    }
+
+    #textojapon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(255, 0, 0);
+
+    }
+
+    #textopaisesb{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(255, 255, 255);
+
+
+    }
+
+    #italia{
+
+        background: linear-gradient(to right, green 33%, white 0%, white 66%, red 33%);
+
+    }
+
+    #textoitalia{
+
+        color: green;
+       
+
+    }
+
+    #textopaisesb:hover{
+
+        color: black;
+
+    }
+
+    #textojapon:hover{
+
+        color: black;
+
+    }
+
+    #textoitalia:hover{
+
+        color: black;
+
+    }
+
+    body{
+
+        min-width: 100vh;
+        min-height: 100vh;
+    }
+    
+</style>
+
+<body> 
+    
+
+    <div id="container">
+    
+        <div id="japao">
+
+            <div id="sol">
+                <div id="textojapon"><h1>ROMULO</h1></div> 
+            </div>
+        </div>
+        <div id="paisesbaixo">
+            <div id="listra1"></div>
+            <div id="listra2">
+                <div id="textopaisesb"><h1>ROMULO</h1></div> 
+            </div>
+            <div id="listra3"></div>
+        </div>
+        <div id="italia"> 
+            <div id="textoitalia"><h1>ROMULO</h1></div> 
+        </div>
+</div>
+</body>
+</html>
