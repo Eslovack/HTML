@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #container{
+        max-width: 100vw;
+        min-height: 100vh;
+        background-color: rgba(255, 0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+
+
+    #logo{
+
+        border-radius: 50%;
+
+    }
+    #logot{
+
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+
+    #chat{
+    
+       width: 400px;
+       height: 600px;
+       position: absolute;
+       background-color: rgba(255, 255, 255, 0.575);
+       color: white;
+       text-align: center;
+       line-height: 100px;
+       top:50%;
+       left: 80%;
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+
+    #titulo{
+
+        border: 1px solid black;
+        border-radius: 10%;
+        color:black ;
+
+    }
+
+
+    #msg{
+
+        height: 50px;
+        width: 300px;
+        margin-top: 350px;
+
+
+    }
+
+    .prato{
+        margin-top: 200px;
+        height: 200px;
+        width: 200px;
+        border-radius: 40%;
+
+
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="cabecalho">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNySgtPNYEeBex2XqhKSrTAM41rCi7rPvEQ&s" alt="" class="logo">
+        <h1 id="logot"> fica com fome ai</h1>
+    </div>
+    </div>
+    <div id="chat">
+        <h1 id="titulo">conversar com o dono fio</h1>
+        <div> <input id="msg" type="Mandar mensagem"></div>
+    </div>
+</body>
+</html>
