@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        let a = "ala";
+
+        
+        function ehPalindromo(str){
+            let r = str.split('').reverse().join('');
+            if(r == str){
+                return "é palindromo";
+            }else{
+                return "não é palindromo";
+            }
+        }
+        alert(ehPalindromo(a));
+
+
+    </script>
+</body>
+</html>
