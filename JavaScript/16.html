@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white; 
+        }
+
+        #btn {
+            padding: 20px 40px;
+            font-size: 16px;
+          
+           
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">aperta aqui nego</button> 
+
+    <script>
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let cor = '#';
+            for (let i = 0; i < 6; i++) {
+                cor += letters[Math.floor(Math.random() * 16)];
+            }
+            return cor;
+        }
+
+        const button = document.getElementById('btn');
+
+        button.addEventListener('click', () => {
+            const randomColor = getRandomColor();
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>

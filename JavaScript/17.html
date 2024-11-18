@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #cor1, #cor2, #cor3, #cor4 {
+            width: 100px;
+            height: 100px;
+            padding: 20px 40px;
+        }
+        #cor1 {
+            background-color: rgb(255, 251, 0);
+        }
+        #cor2, #cor3, #cor4 {
+            background-color: rgba(52, 252, 69, 0.808);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="cor1"><h1></h1></div>
+        <div id="cor2"><h1></h1></div>
+        <div id="cor3"><h1></h1></div>
+        <div id="cor4"><h1></h1></div>
+    </div>
+
+    <script>
+        function corAle() {
+            const letters = '0123456789ABCDEF';
+            let cor = '#';
+            for (let i = 0; i < 6; i++) {
+                cor += letters[Math.floor(Math.random() * 16)];
+            }
+            return cor;
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space') {
+                const cor1 = document.getElementById('cor1');
+                const cor2 = document.getElementById('cor2');
+                const cor3 = document.getElementById('cor3');
+                const cor4 = document.getElementById('cor4');
+
+                const CorNova1 = corAle();
+                const CorNova2 = corAle();
+                const CorNova3 = corAle();
+                const CorNova4 = corAle();
+
+                cor1.style.backgroundColor = CorNova1;
+                cor2.style.backgroundColor = CorNova2;
+                cor3.style.backgroundColor = CorNova3;
+                cor4.style.backgroundColor = CorNova4;
+
+                cor1.querySelector('h1').textContent = CorNova1;
+                cor2.querySelector('h1').textContent = CorNova2;
+                cor3.querySelector('h1').textContent = CorNova3;
+                cor4.querySelector('h1').textContent = CorNova4;
+            }
+        });
+    </script>
+</body>
+</html>

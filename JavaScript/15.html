@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Números Aleatórios</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #btn {
+            padding: 20px 40px; 
+        }
+    </style>
+</head>
+<body>
+    <h1 id="txt">Número Mínimo</h1>
+    <input type="number" name="" id="input_min">
+    <h1>Número Máximo</h1>
+    <input type="number" name="" id="input_max">
+    <button id="btn">Gerar número aleatório</button> 
+
+    <script>
+        let button = document.getElementById('btn');
+        let input_max = document.getElementById('input_max');
+        let input_min = document.getElementById('input_min');
+    
+        button.addEventListener('click', () => {
+            let min = Number.parseFloat(input_min.value);
+            let max = Number.parseFloat(input_max.value);
+
+         
+            let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            button.innerHTML = `${randomNumber}`;
+            
+        });
+    </script>
+</body>
+</html>

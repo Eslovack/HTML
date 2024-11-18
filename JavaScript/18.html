@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclas Pressionadas</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #container {
+            border: 2px solid #333;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .tecla {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #333;
+            background-color: #e0e0e0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            const container = document.getElementById('container');
+            const tecla = document.createElement('div');
+            tecla.className = 'tecla';
+            tecla.textContent = event.key;
+            container.appendChild(tecla);
+        });
+    </script>
+</body>
+</html>
