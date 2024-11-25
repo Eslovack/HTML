@@ -10,24 +10,21 @@
 <form action="" method="get">
 
     <label for="inputa">A: </label>
-    <input id="inputa" name="a" type="text">
+    <input id="inputa" name="a" type="number">
 
     <label for="inputb">B:</label>
-    <input id="inputb" name="b" type="text">
+    <input id="inputb" name="b" type="number">
 
-    <input type="submit" value="conctenar">
+    <input type="submit" value="Somna">
 </form>
     <?php
 
-      
-       
-        $a=$_REQUEST["a"];
-        $b=$_REQUEST["b"];
 
-        
+            $a=$_REQUEST["a"];
+            $b=$_REQUEST["b"];
     ?>
         
-        <p> SOMA: <?php echo$a.$b ?> </p>
+        <p><?php echo rand ($a,$b);      ?>  </p>
 
 </body>
 </html>

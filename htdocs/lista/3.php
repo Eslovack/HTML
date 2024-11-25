@@ -6,13 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <pre>
-        <?php  
-        $hello = "oie";
-        echo $hello;
-        
-                                  ?>
-    </pre>
-                                 
+    
+    <?php   
+    
+    function hello(){
+        $hello = "Olá";
+        echo$hello;
+    }
+
+    ?>
+    <p><?php  hello(); ?></p>
+    
+    
 </body>
 </html>

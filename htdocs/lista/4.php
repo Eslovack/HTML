@@ -6,13 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <pre>
-        <?php  
-        $hello = "oie";
-        echo $hello;
-        
-                                  ?>
-    </pre>
-                                 
+
+<?php
+    function random(){
+
+        echo rand();
+
+
+    }
+    random();
+    
+?>
 </body>
 </html>

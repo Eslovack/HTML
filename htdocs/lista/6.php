@@ -6,13 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <pre>
-        <?php  
-        $hello = "oie";
-        echo $hello;
-        
-                                  ?>
-    </pre>
-                                 
+    
 </body>
 </html>
