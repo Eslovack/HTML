@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    "a a b"
+    "c e g"
+    "c f g"
+    "c m j"
+    "c i j";
+  grid-template-rows: auto 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #666;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.box-a {
+  grid-area: a;
+}
+
+.box-b {
+  grid-area: b;
+}
+
+.box-c {
+  grid-area: c;
+}
+
+.box-e {
+  grid-area: e;
+  background: #ccc;
+}
+
+.box-f {
+  grid-area: f;
+  background: #ccc;
+}
+
+.box-g {
+  grid-area: g;
+  background: #ccc;
+}
+
+.box-m {
+  grid-area: m;
+  background: #ccc;
+}
+
+.box-i {
+  grid-area: i;
+  background: #ccc;
+}
+
+.box-j {
+  grid-area: j;
+  background: #ccc;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box-a">A</div>
+    <div class="box box-b">B</div>
+    <div class="box box-c">C</div>
+    <div class="box box-e">E</div>
+    <div class="box box-f">F</div>
+    <div class="box box-g">G</div>
+    <div class="box box-m">M</div>
+    <div class="box box-i">I</div>
+    <div class="box box-j">J</div>
+  </div>
+</body>
+</html>

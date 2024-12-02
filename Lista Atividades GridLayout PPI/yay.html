@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 250px 1fr;
+  grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background: #6379f7;
+  color: rgb(0, 183, 255);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #ff0202;
+  padding: 1rem;
+  border-right: 1px solid #000000;
+}
+
+.main-content {
+  grid-area: main;
+  padding: 1rem;
+}
+
+.footer {
+  grid-area: footer;
+  background: #3700ff;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <header class="header">Romulo</header>
+    <aside class="sidebar">Romulo Lateral</aside>
+    <main class="main-content">Romulo Principal</main>
+    <footer class="footer">Romulo</footer>
+  </div>
+</body>
+</html>
