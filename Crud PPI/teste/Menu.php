@@ -1,5 +1,5 @@
 <?php
-include 'Banco.php';
+include 'Conexao.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     if ($_POST['action'] === 'delete' && isset($_POST['id'])) {
         $id = $_POST['id'];
@@ -48,7 +48,7 @@ $carros = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <td><?= $carro['cor'] ?></td>
                 <td><?= $carro['placa'] ?></td>
                 <td>
-                    <a href="update.php?id=<?= $carro['id'] ?>">Editar</a> |
+                    <a href="EditarCarros.php?id=<?= $carro['id'] ?>">Editar</a> |
                     <form method="POST" style="display:inline;">
                         <input type="hidden" name="id" value="<?= $carro['id'] ?>">
                         <input type="hidden" name="action" value="delete">
