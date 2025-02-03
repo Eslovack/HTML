@@ -1,5 +1,5 @@
 <?php
-include 'Banco.php';
+include 'Conexao.php';
 
 $sql = "SELECT * FROM carros";
 $stmt = $pdo->query($sql);

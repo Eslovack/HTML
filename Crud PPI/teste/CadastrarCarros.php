@@ -1,5 +1,5 @@
 <?php
-include 'Banco.php';
+include 'Conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $marca = $_POST['marca'];
@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$marca, $modelo, $ano, $cor, $placa]);
 
-    echo "Carro cadastrado com sucesso!";
+    echo "Carro cadastrado";
 }
 ?>
 

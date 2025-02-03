@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         $sql = "DELETE FROM carros WHERE id = ?";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([$id]);
-        echo "Carro excluído com sucesso!";
+        echo "Carro excluído";
     }
 }
 

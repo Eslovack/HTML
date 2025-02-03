@@ -1,5 +1,5 @@
 <?php
-include 'Banco.php';
+include 'Conexao.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];

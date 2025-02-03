@@ -1,5 +1,5 @@
 <?php
-include 'Banco.php';
+include 'Conexao.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -8,8 +8,8 @@ if (isset($_GET['id'])) {
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$id]);
 
-    echo "Carro excluído com sucesso!";
+    echo "Carro excluído";
 } else {
-    echo "ID do carro não fornecido!";
+    echo "ID do carro nao fornecedor";
 }
 ?>
