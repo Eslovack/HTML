@@ -34,7 +34,7 @@ if (isset($_GET['id'])) {
         }
     }
 } else {
-    echo "ID do carro não fornecido";
+    echo "ID do carro n fornecido";
     exit;
 }
 ?>
