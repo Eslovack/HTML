@@ -1,9 +1,7 @@
 
 CREATE DATABASE IF NOT EXISTS carros_db;
 
-
 USE carros_db;
-
 
 CREATE TABLE IF NOT EXISTS carros (
     id INT AUTO_INCREMENT PRIMARY KEY,
